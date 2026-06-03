@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Curso de HTML</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        header{
+            background-color: #0078d7;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .contenedor{
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .modulo{
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+        }
+
+        button{
+            background-color: #0078d7;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: #005fa3;
+        }
+
+        #resultado{
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        footer{
+            text-align: center;
+            background-color: #222;
+            color: white;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mini Curso de HTML</h1>
+        <p>Aprende los conceptos básicos de HTML</p>
+    </header>
+
+    <div class="contenedor">
+
+        <div class="modulo">
+            <h2>Módulo 1: ¿Qué es HTML?</h2>
+            <p>
+                HTML (HyperText Markup Language) es el lenguaje utilizado
+                para crear la estructura de las páginas web.
+            </p>
+        </div>
+
+        <div class="modulo">
+            <h2>Módulo 2: Etiquetas Básicas</h2>
+            <ul>
+                <li>&lt;h1&gt; para títulos</li>
+                <li>&lt;p&gt; para párrafos</li>
+                <li>&lt;a&gt; para enlaces</li>
+                <li>&lt;img&gt; para imágenes</li>
+            </ul>
+        </div>
+
+        <div class="modulo">
+            <h2>Módulo 3: Evaluación</h2>
+
+            <p><strong>¿Qué significa HTML?</strong></p>
+
+            <button onclick="respuestaCorrecta()">
+                HyperText Markup Language
+            </button>
+
+            <button onclick="respuestaIncorrecta()">
+                HyperText Machine Language
+            </button>
+
+            <p id="resultado"></p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Mini Curso desarrollado en HTML, CSS y JavaScript</p>
+    </footer>
+
+    <script>
+        function respuestaCorrecta(){
+            document.getElementById("resultado").innerHTML =
+            "✅ ¡Correcto! HTML significa HyperText Markup Language.";
+        }
+
+        function respuestaIncorrecta(){
+            document.getElementById("resultado").innerHTML =
+            "❌ Incorrecto. Inténtalo nuevamente.";
+        }
+    </script>
+
+</body>
+</html>
