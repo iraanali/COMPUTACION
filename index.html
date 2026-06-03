@@ -1,124 +1,309 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini Curso de HTML</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mini Curso de Python</title>
 
-    <style>
-        body{
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f4f4f4;
-        }
+<style>
 
-        header{
-            background-color: #0078d7;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
+body{
+font-family:Arial,sans-serif;
+margin:0;
+background:#f4f4f4;
+}
 
-        .contenedor{
-            width: 80%;
-            margin: auto;
-            padding: 20px;
-        }
+header{
+background:#306998;
+color:white;
+padding:20px;
+text-align:center;
+}
 
-        .modulo{
-            background: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
-        }
+.container{
+width:85%;
+margin:auto;
+padding:20px;
+}
 
-        button{
-            background-color: #0078d7;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+.seccion{
+background:white;
+padding:20px;
+margin:20px 0;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,.1);
+}
 
-        button:hover{
-            background-color: #005fa3;
-        }
+button{
+background:#306998;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:5px;
+cursor:pointer;
+}
 
-        #resultado{
-            font-weight: bold;
-            margin-top: 15px;
-        }
+button:hover{
+background:#1f4d73;
+}
 
-        footer{
-            text-align: center;
-            background-color: #222;
-            color: white;
-            padding: 15px;
-        }
-    </style>
+.barra{
+width:100%;
+height:25px;
+background:#ddd;
+border-radius:20px;
+overflow:hidden;
+}
+
+#progreso{
+height:100%;
+width:0%;
+background:#4CAF50;
+transition:.5s;
+}
+
+#certificado{
+display:none;
+background:white;
+padding:20px;
+margin-top:20px;
+text-align:center;
+border:4px solid black;
+}
+
+input[type=text]{
+padding:10px;
+width:250px;
+}
+
+</style>
 </head>
 <body>
 
-    <header>
-        <h1>Mini Curso de HTML</h1>
-        <p>Aprende los conceptos básicos de HTML</p>
-    </header>
+<header>
+<h1>Mini Curso de Python</h1>
+<p>Aprende programación desde cero</p>
+</header>
 
-    <div class="contenedor">
+<div class="container">
 
-        <div class="modulo">
-            <h2>Módulo 1: ¿Qué es HTML?</h2>
-            <p>
-                HTML (HyperText Markup Language) es el lenguaje utilizado
-                para crear la estructura de las páginas web.
-            </p>
-        </div>
+<h2>Progreso</h2>
 
-        <div class="modulo">
-            <h2>Módulo 2: Etiquetas Básicas</h2>
-            <ul>
-                <li>&lt;h1&gt; para títulos</li>
-                <li>&lt;p&gt; para párrafos</li>
-                <li>&lt;a&gt; para enlaces</li>
-                <li>&lt;img&gt; para imágenes</li>
-            </ul>
-        </div>
+<div class="barra">
+<div id="progreso"></div>
+</div>
 
-        <div class="modulo">
-            <h2>Módulo 3: Evaluación</h2>
+<p id="porcentaje">0%</p>
 
-            <p><strong>¿Qué significa HTML?</strong></p>
+<div class="seccion">
+<h2>1. Introducción a Python</h2>
+<p>
+Python es un lenguaje de programación fácil de aprender,
+utilizado en inteligencia artificial, videojuegos,
+automatización y desarrollo web.
+</p>
+<button onclick="completar()">Completar sección</button>
+</div>
 
-            <button onclick="respuestaCorrecta()">
-                HyperText Markup Language
-            </button>
+<div class="seccion">
+<h2>2. Variables y Tipos de Datos</h2>
+<p>
+Las variables almacenan información.
+</p>
 
-            <button onclick="respuestaIncorrecta()">
-                HyperText Machine Language
-            </button>
+<pre>
+nombre = "Juan"
+edad = 17
+</pre>
 
-            <p id="resultado"></p>
-        </div>
+<button onclick="completar()">Completar sección</button>
+</div>
 
-    </div>
+<div class="seccion">
+<h2>3. Operadores Matemáticos</h2>
 
-    <footer>
-        <p>Mini Curso desarrollado en HTML, CSS y JavaScript</p>
-    </footer>
+<pre>
+suma = 5 + 3
+resta = 10 - 2
+multiplicacion = 4 * 2
+division = 8 / 2
+</pre>
 
-    <script>
-        function respuestaCorrecta(){
-            document.getElementById("resultado").innerHTML =
-            "✅ ¡Correcto! HTML significa HyperText Markup Language.";
-        }
+<button onclick="completar()">Completar sección</button>
+</div>
 
-        function respuestaIncorrecta(){
-            document.getElementById("resultado").innerHTML =
-            "❌ Incorrecto. Inténtalo nuevamente.";
-        }
-    </script>
+<div class="seccion">
+<h2>4. Condicionales</h2>
+
+<pre>
+edad = 18
+
+if edad >= 18:
+    print("Mayor de edad")
+</pre>
+
+<button onclick="completar()">Completar sección</button>
+</div>
+
+<div class="seccion">
+<h2>5. Ciclos</h2>
+
+<pre>
+for i in range(5):
+    print(i)
+</pre>
+
+<button onclick="completar()">Completar sección</button>
+</div>
+
+<div class="seccion">
+<h2>6. Funciones</h2>
+
+<pre>
+def saludar():
+    print("Hola")
+</pre>
+
+<button onclick="completar()">Completar sección</button>
+</div>
+
+<div class="seccion">
+
+<h2>Examen Final</h2>
+
+<p>1. ¿Python es?</p>
+
+<input type="radio" name="p1" value="1">
+Lenguaje de programación<br>
+
+<input type="radio" name="p1" value="0">
+Navegador web<br><br>
+
+<p>2. ¿Qué símbolo se usa para sumar?</p>
+
+<input type="radio" name="p2" value="1">
++<br>
+
+<input type="radio" name="p2" value="0">
+#<br><br>
+
+<p>3. ¿Qué estructura sirve para repetir?</p>
+
+<input type="radio" name="p3" value="1">
+for<br>
+
+<input type="radio" name="p3" value="0">
+if<br><br>
+
+<p>4. ¿Qué palabra crea una función?</p>
+
+<input type="radio" name="p4" value="1">
+def<br>
+
+<input type="radio" name="p4" value="0">
+fun<br><br>
+
+<button onclick="calificar()">
+Calificar examen
+</button>
+
+<h3 id="resultado"></h3>
+
+</div>
+
+<div id="certificado">
+
+<h1>CERTIFICADO</h1>
+
+<p>Otorgado a:</p>
+
+<input type="text"
+id="nombre"
+placeholder="Escribe tu nombre">
+
+<br><br>
+
+<button onclick="generarCertificado()">
+Generar Certificado
+</button>
+
+<div id="certificadoFinal"></div>
+
+</div>
+
+</div>
+
+<script>
+
+let completadas = 0;
+
+function completar(){
+
+if(completadas < 6){
+completadas++;
+
+let porcentaje = (completadas/6)*100;
+
+document.getElementById("progreso").style.width =
+porcentaje + "%";
+
+document.getElementById("porcentaje").innerText =
+porcentaje + "% completado";
+}
+
+}
+
+function calificar(){
+
+let puntos = 0;
+
+for(let i=1;i<=4;i++){
+
+let respuesta =
+document.querySelector(
+'input[name="p'+i+'"]:checked'
+);
+
+if(respuesta){
+puntos += Number(respuesta.value);
+}
+
+}
+
+document.getElementById("resultado").innerHTML =
+"Resultado: " + puntos + "/4";
+
+if(puntos >= 3){
+
+document.getElementById("certificado")
+.style.display = "block";
+
+}
+
+}
+
+function generarCertificado(){
+
+let nombre =
+document.getElementById("nombre").value;
+
+if(nombre === ""){
+alert("Ingresa tu nombre");
+return;
+}
+
+document.getElementById("certificadoFinal")
+.innerHTML =
+
+"<h2>" + nombre + "</h2>" +
+"<p>Ha completado satisfactoriamente el Mini Curso de Python.</p>" +
+"<p>Fecha: " +
+new Date().toLocaleDateString() +
+"</p>";
+
+}
+
+</script>
 
 </body>
 </html>

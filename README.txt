@@ -1,30 +1,35 @@
-MINI CURSO DE HTML
+MINI CURSO DE PYTHON
 
 Descripción:
-Este proyecto consiste en un mini curso interactivo desarrollado
-utilizando HTML, CSS y JavaScript.
+Este proyecto es un mini curso interactivo diseñado para enseñar los
+fundamentos de programación en Python.
 
-Objetivo:
-Enseñar los conceptos básicos de HTML de manera sencilla y práctica.
+Contenido del curso:
 
-Contenido:
-1. Introducción a HTML.
-2. Etiquetas básicas.
-3. Evaluación interactiva.
+1. Introducción a Python
+2. Variables y tipos de datos
+3. Operadores matemáticos
+4. Estructuras condicionales
+5. Ciclos y bucles
+6. Funciones
+
+Características:
+
+- Barra de progreso.
+- 6 lecciones.
+- Evaluación final.
+- Calificación automática.
+- Certificado de finalización.
+- Diseño responsivo.
 
 Tecnologías utilizadas:
+
 - HTML5
 - CSS3
 - JavaScript
-
-Instrucciones:
-1. Abrir la carpeta del proyecto en Visual Studio Code.
-2. Abrir el archivo index.html.
-3. Ejecutarlo con Live Server o abrirlo en cualquier navegador.
-4. Leer los módulos y responder la evaluación.
 
 Autor:
 Iraan
 
 Versión:
-1.0
+3.0
